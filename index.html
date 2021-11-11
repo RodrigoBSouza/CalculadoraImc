@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <section>
+        <form method="POST" id="formImc" action="/">
+            <div class="containter-info">
+                <h1>Calcule seu IMC:</h1>
+                <table>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÕES</th>
+                    </tr>
+                    <tr>
+                        <td>Menor que 18,5</td>
+                        <td>Abaixo do peso ideal</td>
+                    </tr>
+                    <tr>
+                        <td>18,5 - 24,9</td>
+                        <td>Peso ideal</td>
+                    </tr>
+                    <tr>
+                        <td>25,0 - 29,9</td>
+                        <td>Excesso de peso</td>
+                    </tr>
+                    <tr>
+                        <td>30,0 - 34,9</td>
+                        <td>Obesidade grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>35,0 - 39,9</td>
+                        <td>Obesidade grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Maior ou igual a 40</td>
+                        <td>Obesidade grau 3</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="containter-inputs">
+                <label for="weight">Informe o peso:</label>
+                <input type="number" id="weight" name="weight" placeholder="(ex.: 65,5)">
+                <label for="height">Informe a altura:</label>
+                <input type="number" id="height" name="height" placeholder="(ex.: 1,85)">
+            </div>
+            <button onclick="result()" name="button" type="submit">Calcular</button>
+            <button onclick="cleaner()" id="clean" name="button2" type="submit">Limpar</button>
+            <div id="imc"></div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

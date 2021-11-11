@@ -1,0 +1,1 @@
+Neste projeto eu desenvolvi uma calculadora de IMC com HTML5, CSS3 e Javascript. É umn projeto bem simples a princípio, porém, eu aprendi bastante coisa ao desenvolvê-lo. 
